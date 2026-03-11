@@ -1,5 +1,5 @@
 ---
-// src/pages/etiquetas/[slug].astro - RUTAS DINÁMICAS PARA ETIQUETAS
+// src/pages/etiquetas/[slug].astro - RUTAS DINÁMICAS PARA ETIQUETAS CORREGIDO
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Container from '../../components/ui/Container.astro';
@@ -16,6 +16,9 @@ import {
   searchByTags,
   validateTag
 } from '../../utils/tags.ts';
+
+// 🔧 IMPORTAR FUNCIÓN DE AUTORES CENTRALIZADA
+import { getAuthorAvatar } from '../../utils/authors.ts';
 
 // ✅ HABILITAR PRERENDER
 export const prerender = true;
@@ -42,17 +45,7 @@ interface TagInfo {
   color: string;
   articlesCount: number;
   featured?: boolean;
-}
-
-function getAuthorAvatar(authorName: string): string {
-  const authorAvatars: Record<string, string> = {
-    'Ana María Prieto': '/images/ana-p2.webp',
-    'Manuel Alejandro Bedoya': '/images/manuel-p1.webp',
-    'Equipo Editorial Balto': '/images/baltologo.svg',
-    'Editor Balto': '/images/baltologo.svg'
-  };
-  
-  return authorAvatars[authorName] || '/images/baltologo.svg';
+  trending?: boolean;
 }
 
 export async function getStaticPaths() {
@@ -103,6 +96,7 @@ export async function getStaticPaths() {
              );
     });
     
+    // ✅ PROCESAR ARTÍCULOS CON FUNCIÓN IMPORTADA
     const processedArticles: Article[] = articulosConEtiqueta.map((article: any) => ({
       id: article.slug || 'unknown',
       title: article.data?.title || 'Sin título',
@@ -113,7 +107,7 @@ export async function getStaticPaths() {
         new Date().toISOString().split('T')[0],
       author: {
         name: article.data?.author || 'Editor Kajú',
-        avatar: getAuthorAvatar(article.data?.author || 'Editor Kajú')
+        avatar: getAuthorAvatar(article.data?.author || 'Editor Kajú') // ✅ FUNCIÓN IMPORTADA
       },
       readingTime: article.data?.readingTime || 5,
       categories: [article.data?.category, ...(article.data?.tags || [])].filter(Boolean)
@@ -122,35 +116,46 @@ export async function getStaticPaths() {
     const tagInfo: TagInfo = {
       slug: etiquetaSlug,
       name: etiquetaName,
-      description: etiquetaFromCMS.data.description || `Artículos relacionados con ${etiquetaName.toLowerCase()}`,
-      color: etiquetaFromCMS.data.color || getTagColor(etiquetaName),
+      description: etiquetaFromCMS.data.description || `Artículos sobre ${etiquetaName}`,
+      color: getTagColor(etiquetaName),
       articlesCount: processedArticles.length,
-      featured: etiquetaFromCMS.data.featured || false
+      featured: etiquetaFromCMS.data.featured || false,
+      trending: etiquetaFromCMS.data.trending || false
     };
 
+    console.log(`✅ Generada ruta para etiqueta: /etiquetas/${etiquetaSlug} (${processedArticles.length} artículos)`);
+
     paths.push({
-      params: { slug: etiquetaSlug },
-      props: { 
-        tag: tagInfo,
-        articles: processedArticles
+      params: { 
+        slug: etiquetaSlug 
+      },
+      props: {
+        tagInfo,
+        articles: processedArticles,
+        allTags: allTags.map(tag => ({
+          name: tag.data.name,
+          slug: tag.data.slug || generateTagSlug(tag.data.name),
+          count: allArticles.filter(article => 
+            (article.data.tags || []).includes(tag.data.slug || generateTagSlug(tag.data.name)) ||
+            article.data.category === (tag.data.slug || generateTagSlug(tag.data.name))
+          ).length
+        }))
       }
     });
-    
-    console.log(`✅ Generada ruta para etiqueta: /etiquetas/${etiquetaSlug} (${processedArticles.length} artículos)`);
   }
 
-  // 🏷️ GENERAR TAMBIÉN ETIQUETAS DINÁMICAS DE ARTÍCULOS (tags que no están en CMS)
-  const tagStats = createSafeTagStats(allArticles);
-  
-  for (const [tagSlug, count] of tagStats.entries()) {
-    // Solo agregar si no existe ya en el CMS
-    const existeEnCMS = allTags.some(tag => 
-      (tag.data.slug || generateTagSlug(tag.data.name)) === tagSlug
-    );
+  // 🏷️ GENERAR ETIQUETAS POR DEFECTO SI NO HAY EN EL CMS
+  if (paths.length === 0) {
+    console.log('⚠️ No se encontraron etiquetas del CMS, generando por defecto...');
     
-    if (!existeEnCMS && count > 0) {
-      const tagArticles = searchByTags(allArticles, [tagSlug]);
-      
+    const defaultTags = ['entrenamiento', 'salud', 'alimentacion', 'comportamiento', 'cuidado', 'razas'];
+    
+    defaultTags.forEach(tag => {
+      const tagArticles = allArticles.filter(article => 
+        article.data.category === tag || 
+        (article.data.tags || []).includes(tag)
+      );
+
       const processedArticles: Article[] = tagArticles.map((article: any) => ({
         id: article.slug || 'unknown',
         title: article.data?.title || 'Sin título',
@@ -161,102 +166,50 @@ export async function getStaticPaths() {
           new Date().toISOString().split('T')[0],
         author: {
           name: article.data?.author || 'Editor Kajú',
-          avatar: getAuthorAvatar(article.data?.author || 'Editor Kajú')
+          avatar: getAuthorAvatar(article.data?.author || 'Editor Kajú') // ✅ FUNCIÓN IMPORTADA
         },
         readingTime: article.data?.readingTime || 5,
         categories: [article.data?.category, ...(article.data?.tags || [])].filter(Boolean)
       }));
 
-      // Generar nombre amigable del slug
-      let originalTagName = tagSlug
-  .split('-')
-  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-  .join(' ');
-
-// Intentar encontrar el nombre original con tildes de los artículos
-const foundOriginalName = allArticles.find(article => {
-  const tags = [...(article.data.tags || []), article.data.category].filter(Boolean);
-  return tags.find(tag => generateTagSlug(tag) === tagSlug);
-});
-
-if (foundOriginalName) {
-  const originalTag = [...(foundOriginalName.data.tags || []), foundOriginalName.data.category]
-    .find(tag => generateTagSlug(tag) === tagSlug);
-  if (originalTag) {
-    originalTagName = originalTag; // ✅ Mantiene "Nutrición" con tilde
-  }
-}
-
-const tagName = originalTagName;
-
-      const tagInfo: TagInfo = {
-        slug: tagSlug,
-        name: tagName,
-        description: `Artículos relacionados con ${tagName.toLowerCase()}`,
-        color: getTagColor(tagName),
-        articlesCount: count,
-        featured: false
-      };
-
       paths.push({
-        params: { slug: tagSlug },
-        props: { 
-          tag: tagInfo,
-          articles: processedArticles
+        params: { slug: tag },
+        props: {
+          tagInfo: {
+            slug: tag,
+            name: tag.charAt(0).toUpperCase() + tag.slice(1),
+            description: `Artículos sobre ${tag}`,
+            color: getTagColor(tag),
+            articlesCount: processedArticles.length,
+            featured: false,
+            trending: false
+          },
+          articles: processedArticles,
+          allTags: []
         }
       });
-      
-      console.log(`✅ Generada ruta dinámica: /etiquetas/${tagSlug} (${count} artículos)`);
-    }
+    });
   }
 
-  // 🚨 FALLBACK si no hay paths
-  if (paths.length === 0) {
-    console.log('⚠️ No se encontraron etiquetas, generando fallbacks básicos');
-    const fallbackTags = [
-      { slug: 'salud-dental', name: 'Salud Dental', description: 'Contenido sobre salud dental' },
-      { slug: 'cachorros', name: 'Cachorros', description: 'Contenido sobre cachorros' },
-      { slug: 'entrenamiento', name: 'Entrenamiento', description: 'Artículos sobre entrenamiento' },
-      { slug: 'alimentacion', name: 'Alimentación', description: 'Guías de alimentación' }
-    ];
-    
-    return fallbackTags.map((tagData) => ({
-      params: { slug: tagData.slug },
-      props: { 
-        tag: {
-          slug: tagData.slug,
-          name: tagData.name,
-          description: tagData.description,
-          color: getTagColor(tagData.name),
-          articlesCount: 0,
-          featured: false
-        },
-        articles: [] as Article[]
-      }
-    }));
-  }
-
-  console.log(`✅ Total de paths generados para etiquetas: ${paths.length}`);
+  console.log(`📊 Total de rutas generadas para etiquetas: ${paths.length}`);
   return paths;
 }
 
-// 🔧 OBTENER PROPS CON VALIDACIÓN
-const { tag, articles = [] } = Astro.props;
+// ✅ PROPS DEL COMPONENTE
+const { tagInfo, articles, allTags } = Astro.props as {
+  tagInfo: TagInfo;
+  articles: Article[];
+  allTags: Array<{ name: string; slug: string; count: number; }>;
+};
 
-// Validar que tag existe
-if (!tag) {
-  console.error('❌ Tag no definido en props');
-  return Astro.redirect('/404');
-}
-
-// 🎨 CLASSES CSS SEGÚN COLOR
+// 🎨 FUNCIÓN PARA CLASES DE COLOR DINÁMICAS
 const getColorClasses = (color: string) => {
   const colorMap: Record<string, string> = {
-    'green': 'from-green-500 to-green-600',
     'blue': 'from-blue-500 to-blue-600',
+    'green': 'from-green-500 to-green-600', 
+    'red': 'from-red-500 to-red-600',
     'purple': 'from-purple-500 to-purple-600',
     'orange': 'from-orange-500 to-orange-600',
-    'red': 'from-red-500 to-red-600',
     'yellow': 'from-yellow-500 to-yellow-600',
     'pink': 'from-pink-500 to-pink-600',
     'indigo': 'from-indigo-500 to-indigo-600',
@@ -264,32 +217,37 @@ const getColorClasses = (color: string) => {
     'cyan': 'from-cyan-500 to-cyan-600',
     'gray': 'from-gray-500 to-gray-600'
   };
-  return colorMap[tag.color] || colorMap.gray;
+  return colorMap[color] || colorMap.gray;
 };
 
-const tagColorClasses = getColorClasses(tag.color);
+const tagColorClasses = getColorClasses(tagInfo.color);
 
-// 🔗 ETIQUETAS RELACIONADAS (simuladas)
-const relatedTags = [
-  { slug: 'salud', name: 'Salud', color: 'red' },
-  { slug: 'cuidado', name: 'Cuidado', color: 'green' },
-  { slug: 'veterinaria', name: 'Veterinaria', color: 'blue' },
-  { slug: 'prevencion', name: 'Prevención', color: 'purple' }
-].filter(t => t.slug !== tag.slug);
+// 🔗 ETIQUETAS RELACIONADAS (basadas en las reales disponibles)
+const relatedTags = allTags
+  .filter(t => t.slug !== tagInfo.slug && t.count > 0)
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 4)
+  .map(tag => ({
+    ...tag,
+    color: getTagColor(tag.name)
+  }));
 ---
 
 <BaseLayout
-  title={`${tag.name} | Etiquetas Kajú`}
-  description={tag.description}
+  title={`${tagInfo.name} | Etiquetas Kajú`}
+  description={tagInfo.description}
 >
   {/* Breadcrumbs */}
   <Container class="pt-6">
     <nav class="flex items-center text-sm text-gray-500" aria-label="Breadcrumb">
-      <a href="/" class="hover:text-green-600 transition-colors">Inicio</a>
+      <a href="/" class="hover:text-green-600 transition-colors flex items-center">
+        <span class="mr-1">🏠</span>
+        Inicio
+      </a>
       <span class="mx-2">→</span>
       <a href="/etiquetas" class="hover:text-green-600 transition-colors">Etiquetas</a>
       <span class="mx-2">→</span>
-      <span class="text-gray-700 font-medium">{tag.name}</span>
+      <span class="text-gray-700 font-medium">{tagInfo.name}</span>
     </nav>
   </Container>
 
@@ -298,163 +256,187 @@ const relatedTags = [
     {/* Patrón de fondo decorativo */}
     <div class="absolute inset-0 opacity-10">
       <div class="absolute -top-4 -right-4 w-32 h-32 bg-white rounded-full blur-xl"></div>
-      <div class="absolute top-1/2 -left-8 w-24 h-24 bg-yellow-300 rounded-full blur-lg"></div>
-      <div class="absolute -bottom-6 right-1/3 w-40 h-40 bg-white rounded-full blur-2xl"></div>
+      <div class="absolute top-1/2 -left-8 w-24 h-24 bg-yellow-300 rounded-full blur-xl"></div>
+      <div class="absolute bottom-4 right-1/4 w-16 h-16 bg-white rounded-full blur-lg"></div>
     </div>
-    
-    <!-- Ondas decorativas -->
-    <div class="absolute bottom-0 left-0 right-0">
-      <svg viewBox="0 0 1200 120" class="w-full h-12 fill-current text-white">
-        <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" />
-      </svg>
-    </div>
-    
-    <Container>
-      <div class="py-16 md:py-20 relative z-10">
-        <div class="max-w-4xl mx-auto text-center">
-          {/* Badge de etiqueta */}
-          <div class="inline-block mb-6">
-            <span class="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider border border-white/30">
-              🏷️ Etiqueta
-            </span>
+
+    <Container class="py-16 relative z-10">
+      <div class="text-center">
+        {/* Badge de categoría */}
+        <div class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-4">
+          <span class="mr-2">🏷️</span>
+          Etiqueta
+        </div>
+
+        {/* Título principal */}
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          {tagInfo.name}
+        </h1>
+
+        {/* Descripción */}
+        <p class="text-xl text-white/90 mb-6 max-w-2xl mx-auto">
+          {tagInfo.description}
+        </p>
+
+        {/* Estadísticas */}
+        <div class="flex justify-center items-center gap-6 text-white/80">
+          <div class="flex items-center">
+            <span class="mr-2">📄</span>
+            <span class="font-medium">{tagInfo.articlesCount}</span>
+            <span class="ml-1">artículos</span>
           </div>
           
-          <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
-            {tag.name}
-          </h1>
-          <p class="text-xl md:text-2xl opacity-95 mb-10 leading-relaxed max-w-3xl mx-auto">
-            {tag.description}
-          </p>
+          {tagInfo.featured && (
+            <div class="flex items-center">
+              <span class="mr-2">⭐</span>
+              <span>Destacada</span>
+            </div>
+          )}
           
-          {/* Estadísticas */}
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
-            <div class="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-              <div class="text-3xl font-bold text-yellow-300">{articles.length}</div>
-              <div class="text-sm opacity-90">Artículos</div>
+          {tagInfo.trending && (
+            <div class="flex items-center">
+              <span class="mr-2">🔥</span>
+              <span>Tendencia</span>
             </div>
-            <div class="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-              <div class="text-3xl font-bold text-yellow-300">{tag.featured ? '⭐' : '📖'}</div>
-              <div class="text-sm opacity-90">{tag.featured ? 'Popular' : 'Tema'}</div>
-            </div>
-            <div class="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20 md:block hidden">
-              <div class="text-3xl font-bold text-yellow-300">5★</div>
-              <div class="text-sm opacity-90">Calidad</div>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </Container>
   </div>
-  
-  <Container class="py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-      {/* Contenido principal */}
-      <div class="lg:col-span-8">
+
+  {/* Contenido principal */}
+  <Container class="py-12">
+    <div class="grid lg:grid-cols-4 gap-8">
+      {/* Artículos principales */}
+      <div class="lg:col-span-3">
         {articles.length > 0 ? (
           <>
-            {/* Header de artículos */}
-            <div class="flex items-center gap-3 mb-8">
-              <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span class="text-2xl text-white">📚</span>
-              </div>
-              <h2 class="text-3xl font-bold text-gray-900">
-                Artículos sobre {tag.name}
+            <div class="mb-8">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                Artículos sobre {tagInfo.name}
               </h2>
-              <div class="flex-1 h-px bg-gradient-to-r from-green-200 to-transparent"></div>
+              <p class="text-gray-600">
+                {tagInfo.articlesCount} artículo{tagInfo.articlesCount !== 1 ? 's' : ''} encontrado{tagInfo.articlesCount !== 1 ? 's' : ''}
+              </p>
             </div>
-            
+
+            {/* Lista de artículos */}
             <ArticleList 
-              articles={articles} 
-              layout="grid" 
+              articles={articles}
+              layout="grid"
               columns={2}
             />
           </>
         ) : (
-          <div class="bg-gradient-to-br from-gray-50 to-yellow-50 rounded-xl p-12 text-center border-2 border-yellow-200">
-            <div class="text-6xl mb-4">📝</div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              No hay artículos disponibles
-            </h3>
-            <p class="text-gray-600 mb-6">
-              Aún no tenemos artículos específicos para la etiqueta "{tag.name}", pero estamos trabajando en crear contenido sobre este tema.
+          <div class="text-center py-16">
+            <div class="text-6xl mb-4">📭</div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+              No hay artículos aún
+            </h2>
+            <p class="text-gray-600 mb-8">
+              Todavía no tenemos contenido para la etiqueta "{tagInfo.name}".
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button href="/articulos" variant="primary">
-                Ver todos los artículos
-              </Button>
-              <Button href="/etiquetas" variant="outline">
-                Explorar otras etiquetas
-              </Button>
-            </div>
+            <Button href="/articulos" variant="primary">
+              Ver todos los artículos
+            </Button>
           </div>
         )}
       </div>
-      
+
       {/* Sidebar */}
-      <div class="lg:col-span-4">
-        <div class="sticky top-[140px] space-y-8">
+      <div class="lg:col-span-1">
+        <div class="sticky top-8 space-y-8">
           {/* Etiquetas relacionadas */}
           {relatedTags.length > 0 && (
-            <Card class="p-8">
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center shadow-md">
-                  <span class="text-lg text-white">🔗</span>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900">Etiquetas relacionadas</h3>
-              </div>
-              
-              <div class="flex flex-wrap gap-3">
-                {relatedTags.map(relatedTag => (
+            <Card class="mb-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                <span class="mr-2">🔗</span>
+                Etiquetas relacionadas
+              </h3>
+              <div class="space-y-3">
+                {relatedTags.map(tag => (
                   <a 
-                    href={`/etiquetas/${relatedTag.slug}`}
-                    class={`inline-block px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md
-                      ${relatedTag.color === 'red' ? 'bg-red-100 hover:bg-red-200 text-red-800' : ''}
-                      ${relatedTag.color === 'green' ? 'bg-green-100 hover:bg-green-200 text-green-800' : ''}
-                      ${relatedTag.color === 'blue' ? 'bg-blue-100 hover:bg-blue-200 text-blue-800' : ''}
-                      ${relatedTag.color === 'purple' ? 'bg-purple-100 hover:bg-purple-200 text-purple-800' : ''}
-                      ${!relatedTag.color ? 'bg-gray-100 hover:bg-gray-200 text-gray-800' : ''}
-                    `}
+                    href={`/etiquetas/${tag.slug}`}
+                    class="flex items-center justify-between p-3 rounded-lg border border-gray-200 hover:border-green-300 hover:bg-green-50 transition-all group"
                   >
-                    {relatedTag.name}
+                    <div class="flex items-center">
+                      <Badge variant="primary" class="mr-3">
+                        {tag.name}
+                      </Badge>
+                    </div>
+                    <span class="text-sm text-gray-500 group-hover:text-green-600">
+                      {tag.count}
+                    </span>
                   </a>
                 ))}
               </div>
             </Card>
           )}
-          
-          {/* CTA Newsletter */}
-          <Card class="p-8 bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span class="text-xl text-white">📬</span>
+
+          {/* Información de la etiqueta */}
+          <Card class="mb-6">
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-medium text-gray-900 mb-1">Descripción</h4>
+                <p class="text-sm text-gray-600">
+                  {tagInfo.description}
+                </p>
               </div>
-              <h3 class="text-xl font-bold text-gray-900">¡No te pierdas nada!</h3>
+              
+              <div>
+                <h4 class="font-medium text-gray-900 mb-1">Estadísticas</h4>
+                <div class="text-sm text-gray-600 space-y-1">
+                  <div>• {tagInfo.articlesCount} artículos publicados</div>
+                  {tagInfo.featured && <div>• Etiqueta destacada</div>}
+                  {tagInfo.trending && <div>• En tendencia</div>}
+                </div>
+              </div>
             </div>
-            
-            <p class="text-gray-600 mb-6">
-              Suscríbete para recibir los últimos artículos sobre {tag.name.toLowerCase()} y otros temas de cuidado de mascotas.
-            </p>
-            
-            <Button href="/newsletter" variant="primary" class="w-full">
-              Suscribirse al newsletter
-            </Button>
           </Card>
-          
-          {/* Volver a etiquetas */}
-          <Card class="p-8 text-center">
-            <div class="text-4xl mb-4">🏷️</div>
-            <h3 class="text-lg font-bold text-gray-900 mb-3">
-              Explorar más etiquetas
-            </h3>
-            <p class="text-gray-600 text-sm mb-6">
-              Descubre otros temas de interés
-            </p>
-            <Button href="/etiquetas" variant="outline" class="w-full">
-              Ver todas las etiquetas
-            </Button>
+
+          {/* CTA para regresar */}
+          <Card>
+            <div class="text-center">
+              <h4 class="font-bold text-gray-900 mb-2">
+                ¿Buscas algo más?
+              </h4>
+              <p class="text-sm text-gray-600 mb-4">
+                Explora todas nuestras etiquetas y encuentra el contenido perfecto para ti.
+              </p>
+              <Button href="/etiquetas" variant="outline" size="sm" class="w-full">
+                Ver todas las etiquetas
+              </Button>
+            </div>
           </Card>
         </div>
       </div>
     </div>
   </Container>
+
+  {/* Newsletter */}
+  <div class="bg-gradient-to-r from-green-50 to-blue-50 py-16">
+    <Container>
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+          ¿Te gusta el contenido sobre {tagInfo.name}?
+        </h2>
+        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Suscríbete a nuestro newsletter y recibe los mejores artículos sobre mascotas directamente en tu email.
+        </p>
+        <div class="max-w-md mx-auto">
+          <!-- Newsletter component would go here -->
+          <div class="flex">
+            <input 
+              type="email" 
+              placeholder="Tu email" 
+              class="flex-1 px-4 py-3 border border-r-0 border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            />
+            <Button type="submit" class="rounded-l-none">
+              Suscribirse
+            </Button>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </div>
 </BaseLayout>
