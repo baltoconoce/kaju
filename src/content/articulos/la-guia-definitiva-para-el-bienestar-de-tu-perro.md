@@ -1,7 +1,7 @@
 ---
 title: "La guía definitiva para el bienestar de tu perro: Todo lo que necesitas saber"
 description: "Descubre todo lo que necesitas para mantener a tu mejor amigo feliz, sano y en perfecta forma. Guía completa sobre nutrición, ejercicio, salud preventiva y bienestar emocional canino."
-date: 2024-01-25T09:00:00.000Z
+date: 2026-01-25T09:00:00.000Z
 author: "Equipo Editorial Kajú"
 authorBio: "El equipo de Kajú investiga y verifica información con fuentes confiables para brindarte contenido útil y real sobre el cuidado de mascotas."
 tags: ["bienestar-integral", "salud-canina", "nutricion-perros", "ejercicio-perros", "cuidados-preventivos"]

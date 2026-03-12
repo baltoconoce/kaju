@@ -1,7 +1,7 @@
 ---
 title: "Los nombres más populares para mascotas en Colombia 2026: ¿Cómo elegir el nombre perfecto?"
 description: "Descubre los nombres más trending para perros y gatos en Colombia. Guía completa con listas actualizadas, tendencias por región y consejos para elegir el nombre ideal."
-date: 2026-02-29T16:00:00.000Z
+date: 2026-02-21T16:00:00.000Z
 author: "Ana María Prieto"
 authorBio: "Mamá de Río, amante incondicional de los perros y administradora"
 tags: ["nombres-mascotas", "colombia", "tendencias-2026", "perros", "gatos"]

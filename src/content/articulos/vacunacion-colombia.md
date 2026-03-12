@@ -1,7 +1,7 @@
 ---
-title: "Vacunas para mascotas en Colombia 2025: Esquemas, costos y calendario completo"
-description: "Todo lo que necesitas saber sobre vacunación de perros y gatos en Colombia. Esquemas oficiales, precios actuales, vacunación gratuita y cronograma por edades."
-date: 2025-05-30T18:00:00.000Z
+title: "Vacunas para mascotas en Colombia 2026: Esquemas, costos y calendario completo"
+description: "Todo lo que necesitas saber sobre vacunación de perros y gatos en Colombia. Esquemas recomendados, precios actualizados, vacunación gratuita y cronograma por edades."
+date: 2026-03-04T18:00:00.000Z
 author: "Equipo Editorial Kajú"
 authorBio: "El equipo de Kajú investiga y verifica información con fuentes confiables para brindarte contenido útil y real sobre el cuidado de mascotas."
 tags: ["vacunas", "salud-mascotas", "colombia", "prevención", "veterinaria"]
@@ -11,372 +11,339 @@ image: /images/articulos/vacunas.webp
 imageAlt: "Veterinario aplicando vacuna a perro en Colombia"
 readingTime: 15
 status: "published"
-seoTitle: "Vacunas mascotas Colombia 2025 - Esquemas y precios completos"
-seoDescription: "Guía oficial de vacunación para perros y gatos en Colombia. Esquemas actualizados, precios 2025, vacunación gratuita gobierno y calendario por edades."
+seoTitle: "Vacunas mascotas Colombia 2026 - Esquemas y precios completos"
+seoDescription: "Guía de vacunación para perros y gatos en Colombia. Esquemas actualizados, precios 2026, vacunación gratuita y calendario por edades."
 keywords: ["vacunas perros colombia", "vacunacion gatos", "esquema vacunacion mascotas", "vacuna antirrabica gratuita"]
 articleType: "Article"
 ---
 
-# Vacunas para mascotas en Colombia 2025: Esquemas, costos y calendario completo
+# Vacunas para mascotas en Colombia 2026: Esquemas, costos y calendario completo
 
-**La vacunación es la herramienta más efectiva para proteger la salud de tu mascota y prevenir enfermedades mortales.** En Colombia, la rabia es considerada una prioridad en salud pública al ser una enfermedad infecciosa aguda que causa encefalitis con letalidad del 100% en personas y animales.
+**La vacunación es una de las herramientas más importantes para proteger la salud de tu mascota y prevenir enfermedades graves.** En Colombia, la rabia sigue siendo una prioridad de salud pública por su letalidad y por el riesgo de transmisión entre animales y humanos.
 
-Con programas gubernamentales activos y una creciente conciencia sobre medicina preventiva veterinaria, entender el esquema de vacunación correcto es fundamental para la salud de tu compañero.
+Con programas gubernamentales activos y mayor conciencia sobre medicina preventiva veterinaria, entender el esquema de vacunación correcto sigue siendo fundamental para cuidar a tu perro o gato.
 
-Esta guía completa te ayudará a navegar por los esquemas de vacunación, costos actuales y programas gratuitos disponibles en Colombia.
+Esta guía te ayuda a entender los esquemas más usados en Colombia, los precios de referencia en 2026 y los programas gratuitos disponibles, especialmente para vacunación antirrábica.
 
 ## 🦠 ¿Por qué vacunar a tu mascota?
 
 ### Beneficios comprobados de la vacunación
 
-La vacunación ha demostrado ser exitosa tanto en medicina humana como veterinaria. Enfermedades como el parvovirus canino, el moquillo canino y la leucemia felina se han reducido significativamente gracias a los programas de vacunación sistemática.
+La vacunación reduce el riesgo de enfermedades infecciosas graves en perros y gatos y sigue siendo uno de los pilares de la medicina preventiva veterinaria.
 
 **Protección individual:**
-- **Inmunidad activa:** El sistema inmune desarrolla anticuerpos específicos
-- **Prevención de enfermedades mortales:** Reduce el riesgo hasta en un 95%
-- **Menor costo a largo plazo:** Prevenir es más económico que tratar
-- **Mayor esperanza de vida:** Mascotas vacunadas viven más años
+- **Inmunidad activa:** El sistema inmune desarrolla defensa frente a agentes infecciosos concretos
+- **Prevención de enfermedades graves:** Reduce de forma importante el riesgo de cuadros potencialmente mortales
+- **Menor costo a largo plazo:** Prevenir suele ser mucho más económico que hospitalizar o tratar
+- **Más tranquilidad para el hogar:** Permite un mejor control sanitario desde cachorro o gatito
 
 **Protección comunitaria:**
-- **Inmunidad de rebaño:** Protege a toda la población animal
-- **Prevención de brotes:** Evita epidemias en comunidades
-- **Salud pública:** Previene zoonosis (enfermedades transmisibles a humanos)
+- **Menor circulación de enfermedades:** Ayuda a reducir contagios entre animales
+- **Prevención de brotes:** Especialmente en zonas con alta densidad de mascotas
+- **Salud pública:** Es clave frente a zoonosis como la rabia
 
-**Dato importante:** En Colombia, la rabia es una enfermedad zoonótica que puede transmitirse de animales a humanos. La vacunación antirrábica es obligatoria por ley.
+**Dato importante:** En Colombia, la vacuna antirrábica tiene una prioridad especial en salud pública. Además, para viajes e ingreso de mascotas al país, el ICA exige que la primera vacuna contra la rabia se haya aplicado con una antelación mínima de 21 días y establece 3 meses como referencia mínima para su aplicación. 
 
 ## 📅 Esquema de vacunación para perros en Colombia
 
-### Cronograma oficial recomendado
+### Cronograma recomendado
+
+En la práctica veterinaria en Colombia, el esquema canino puede variar según la edad del cachorro, el laboratorio, la historia clínica y el riesgo epidemiológico. Aun así, la pauta general más aceptada inicia entre las **6 y 8 semanas**, con refuerzos cada **2 a 4 semanas** hasta completar la última dosis después de las **16 semanas**.
 
 **Primera etapa - Cachorros (6-16 semanas):**
 
 **6-8 semanas:**
-- Primera pentavalente (Moquillo, Hepatitis, Parvovirus, Parainfluenza, Leptospira)
-- Costo aproximado: $40,000 - $60,000
+- Primera dosis de vacuna múltiple canina
+- Evaluación clínica previa
+- Desparasitación según criterio veterinario
 
-**9-11 semanas:**
-- Segunda pentavalente (refuerzo)
-- Costo aproximado: $40,000 - $60,000
+**9-12 semanas:**
+- Refuerzo de vacuna múltiple
+- Ajustes según estado de salud y exposición del cachorro
 
-**12-14 semanas:**
-- Tercera pentavalente (refuerzo)
-- Primera antirrábica (obligatoria a partir de los 3 meses)
-- Costo conjunto: $70,000 - $100,000
+**12-16 semanas:**
+- Nuevos refuerzos según plan vacunal
+- Primera antirrábica a partir de los 3 meses
+- En algunos esquemas también se incluye leptospira o bordetella según riesgo
 
-**15-16 semanas:**
-- Cuarta pentavalente (opcional según criterio veterinario)
-- Costo aproximado: $40,000 - $60,000
+**Adultos - Refuerzos:**
+- La frecuencia del refuerzo depende del tipo de vacuna: algunas vacunas no esenciales se refuerzan anualmente, mientras que otras esenciales pueden tener intervalos más amplios según criterio veterinario y producto usado
 
-**Adultos - Refuerzos anuales:**
-- **Anualmente:** Pentavalente y antirrábica
-- **Costo anual total:** $80,000 - $120,000
+### Vacunas complementarias según riesgo
 
-### Vacunas opcionales según riesgo
+Algunas vacunas no se aplican a todos los perros y dependen del estilo de vida del animal:
 
-**Coronavirus canino:**
-- **Cuándo:** Perros en contacto con muchos otros canes
-- **Costo:** $35,000 - $50,000
-
-**Tos de perreras (Bordetella):**
-- **Cuándo:** Perros que van a guarderías o hoteles
-- **Costo:** $40,000 - $60,000
-
-**Leishmaniasis:**
-- **Cuándo:** Zonas endémicas (Costa Atlántica)
-- **Costo:** $100,000 - $150,000
+- **Bordetella / tos de perreras:** útil en perros que van a guardería, hotel, peluquería frecuente o conviven con muchos perros
+- **Leptospira:** importante en zonas o contextos de riesgo
+- **Coronavirus canino:** no siempre forma parte de los esquemas considerados esenciales
+- **Otras vacunas:** deben definirse caso por caso con el veterinario
 
 ## 🐱 Esquema de vacunación para gatos en Colombia
 
-### Cronograma felino oficial
+### Cronograma felino recomendado
+
+En gatos, la recomendación general es iniciar la vacunación alrededor de las **8 semanas**, comenzando habitualmente con la **triple felina**, y luego aplicar refuerzos cada pocas semanas hasta cerrar el esquema inicial. La vacuna contra la leucemia felina se evalúa según riesgo y suele requerir prueba previa en muchos protocolos.
 
 **Primera etapa - Gatitos (8-16 semanas):**
 
-**8-10 semanas:**
-- Primera trivalente felina (Panleucopenia, Rinotraqueitis, Calicivirus)
-- Costo aproximado: $35,000 - $50,000
+**8 semanas:**
+- Primera triple felina
+- Valoración clínica previa
 
-**12-14 semanas:**
-- Segunda trivalente felina (refuerzo)
-- Primera leucemia felina (solo gatos negativos a FeLV)
-- Costo conjunto: $60,000 - $85,000
+**12 semanas:**
+- Refuerzo de triple felina
+- Evaluación para leucemia felina según riesgo y prueba previa
 
 **16 semanas:**
-- Tercera trivalente felina (refuerzo)
-- Segunda leucemia felina (refuerzo)
-- Primera antirrábica (obligatoria a partir de los 3 meses)
-- Costo conjunto: $80,000 - $110,000
+- Cierre del esquema inicial según protocolo
+- Antirrábica a partir de los 3 meses o en el momento que indique el veterinario
 
 **Adultos - Mantenimiento:**
-- **Anualmente:** Trivalente felina y antirrábica
-- **Costo anual:** $60,000 - $85,000
+- Los refuerzos dependen del riesgo, el tipo de biológico y la recomendación profesional
 
-## 🏛️ Programas gubernamentales de vacunación gratuita
+### Vacunas felinas frecuentes
+
+- **Triple felina:** protege frente a panleucopenia, rinotraqueítis y calicivirus
+- **Leucemia felina (FeLV):** recomendada en gatos con riesgo de exposición y usualmente previa prueba negativa
+- **Antirrábica:** relevante por salud pública y movilidad
+
+##  Programas gubernamentales de vacunación gratuita
 
 ### Vacunación antirrábica gratuita
 
-**Cobertura nacional:**
-- **Entidad responsable:** Ministerio de Salud y Protección Social
-- **Distribuidor:** Secretarías de Salud departamentales y municipales
+La vacuna con mayor disponibilidad gratuita en programas públicos es la **antirrábica**. En Bogotá, la Secretaría Distrital de Salud mantiene puntos fijos y jornadas para perros y gatos **sin ningún costo**.
 
-### Bogotá - Programa distrital
+### Bogotá - Programa distrital 2026
 
-**Datos 2023:**
-- **Cobertura útil:** 66,3% (similar a 2022 con 66,0%)
-- **Nota importante:** La Secretaría Distrital de Salud no contó con disponibilidad de biológico durante los primeros seis meses de 2023
+**Lo que sí está confirmado para 2026:**
+- La Secretaría Distrital de Salud vacuna **gratis** contra la rabia a perros y gatos
+- **No necesitas cita**
+- **No se requiere recibo de servicio público**
+- Pueden acceder animales de **cualquier estrato socioeconómico**
+- La entidad pública **únicamente aplica la vacuna contra la rabia**, no el resto del esquema
+- La programación de puntos está sujeta a cambios
 
-**Requisitos para vacunación gratuita:**
-✅ **Edad mínima:** 3 meses de edad
-✅ **Estado de salud:** Animal clínicamente sano
-✅ **Documentos:** Cédula del propietario
-✅ **Restricciones:** No hembras preñadas
-✅ **Transporte:** Gatos en guacales obligatorio
+**Requisitos generales del animal:**
+✅ **Edad mínima:** 3 meses  
+✅ **Buen estado de salud**  
+✅ **No haber recibido antirrábica en el último año**  
+✅ **Hembras no gestantes**  
+✅ **Gatos en guacal o transportadora**  
+✅ **Perros con collar y traílla**
 
-**Puntos de vacunación:**
-- **Consulta ubicaciones:** www.saludcapital.gov.co
-- **Línea de información:** 195 (24 horas)
+**Canales de consulta en Bogotá:**
+- **Portal Bogotá / Secretaría Distrital de Salud**
 - **Correo:** vacunarabiaanimal@saludcapital.gov.co
+- **Línea 195**
 
-### Otras ciudades principales
+### Otras ciudades
 
-**Medellín:**
-- **Programa:** Secretaría de Salud de Medellín
-- **Estrategia:** Prevención y control del virus de la rabia
-- **Cobertura:** Comunas y corregimientos
+Muchos municipios y secretarías de salud realizan jornadas similares, pero la oferta cambia según presupuesto, cobertura y calendario local. Por eso conviene revisar la secretaría de salud de cada ciudad antes de publicar fechas o puntos exactos.
 
-**Cali:**
-- **Programa:** Secretaría de Salud del Valle
-- **Cobertura:** Valle del Cauca
+##  Costos de vacunación privada en Colombia 2026
 
-## 💰 Costos de vacunación privada en Colombia 2025
+### Rangos referenciales de precios
 
-### Rango de precios por región
+En Colombia, los precios privados cambian según ciudad, clínica, si incluye consulta, si es aplicación a domicilio y el laboratorio del biológico. A marzo de 2026, las referencias visibles en el mercado muestran algo así:
 
-**Ciudades principales (Bogotá, Medellín, Cali):**
-- **Consulta + vacuna pentavalente:** $80,000 - $120,000
-- **Consulta + antirrábica:** $50,000 - $80,000
-- **Paquete completo cachorro:** $250,000 - $400,000
+**Perros:**
+- **Vacuna pentavalente canina:** alrededor de **$70.000** aplicada en clínica en Bogotá
+- **Biológicos sueltos caninos:** desde aprox. **$12.500** para rabia y entre **$26.600 y $43.000** para vacunas múltiples vendidas por dosis, sin asumir siempre que incluyan consulta o aplicación
 
-**Ciudades intermedias:**
-- **Consulta + vacuna pentavalente:** $60,000 - $90,000
-- **Consulta + antirrábica:** $40,000 - $60,000
-- **Paquete completo cachorro:** $200,000 - $300,000
+**Gatos:**
+- **Vacuna triple felina aplicada:** alrededor de **$74.800 a $79.000**
+- **Vacuna leucemia felina aplicada:** alrededor de **$77.800**
+- **Biológicos felinos por dosis:** desde aprox. **$28.100** para triple felina, **$34.300-$34.500** para leucemia, y **$45.800** para triple felina + rabia en algunos canales
 
-**Factores que afectan el precio:**
-- Ubicación de la clínica
-- Marca de la vacuna (importadas vs. nacionales)
-- Servicios incluidos (consulta, certificado, carné)
-- Experiencia del veterinario
+### Cómo interpretar estos precios
 
-## ⚠️ Enfermedades que previenen las vacunas
+Estos valores son **referenciales** y no equivalen a una tarifa oficial nacional. El precio real puede subir si incluye:
+- consulta médica
+- carné
+- revisión previa
+- aplicación a domicilio
+- recargo por zona o urgencia
+- marca del laboratorio
+
+Por eso, si vas a publicar cifras, es mejor hablar de **rangos aproximados 2026** que de un precio exacto para toda Colombia.
+
+##  Enfermedades que ayudan a prevenir las vacunas
 
 ### En perros
 
-**Moquillo canino (Distemper):**
-- **Mortalidad:** 80% en cachorros no vacunados
-- **Síntomas:** Fiebre, secreción nasal, convulsiones
-- **Tratamiento:** No existe cura específica
+**Moquillo canino (distemper):**
+- Enfermedad viral grave
+- Puede afectar sistema respiratorio, digestivo y neurológico
 
 **Parvovirus canino:**
-- **Mortalidad:** 91% sin tratamiento
-- **Síntomas:** Diarrea sanguinolenta, vómito severo
-- **Costo tratamiento:** $500,000 - $1,500,000
+- Muy peligroso en cachorros
+- Produce vómito, diarrea severa y deshidratación
+
+**Hepatitis y adenovirus canino:**
+- Pueden generar cuadros sistémicos importantes
 
 **Rabia:**
-- **Mortalidad:** 100% una vez aparecen síntomas
-- **Zoonosis:** Altamente peligrosa para humanos
-- **Obligatoria:** Por ley en todo Colombia
+- Enfermedad zoonótica letal
+- De alta importancia para salud pública
 
 ### En gatos
 
 **Panleucopenia felina:**
-- **Mortalidad:** 90% en gatitos
-- **Síntomas:** Diarrea severa, deshidratación
-- **Conocida como:** "Parvo felino"
+- Puede ser muy grave en gatitos
 
-**Rinotraqueitis viral felina:**
-- **Síntomas:** Conjuntivitis, úlceras oculares
-- **Cronicidad:** Puede volverse crónica
+**Rinotraqueítis viral felina:**
+- Produce enfermedad respiratoria y ocular
+
+**Calicivirus felino:**
+- Frecuente en cuadros respiratorios y orales
 
 **Leucemia felina (FeLV):**
-- **Inmunosupresión:** Debilita defensas
-- **Cáncer:** Puede causar tumores
-- **Transmisión:** Entre gatos por contacto
+- Afecta el sistema inmune y se valora según riesgo
 
 ## 🩺 Efectos secundarios y cuidados post-vacunación
 
-### Reacciones normales (24-48 horas)
-✅ Fiebre leve (menos de 39.5°C)
-✅ Decaimiento temporal
-✅ Falta de apetito leve
-✅ Dolor en zona de aplicación
-✅ Somnolencia
+### Reacciones normales de corta duración
+✅ Decaimiento leve  
+✅ Dolor local  
+✅ Somnolencia  
+✅ Menor apetito por unas horas  
+✅ Molestia en el sitio de aplicación  
 
-### Reacciones que requieren atención veterinaria inmediata
-🚨 Dificultad para respirar
-🚨 Vómito persistente
-🚨 Diarrea severa
-🚨 Inflamación facial o párpados
-🚨 Convulsiones
-🚨 Fiebre alta (>40°C)
+### Signos de alerta para consultar rápido
+🚨 Dificultad para respirar  
+🚨 Vómito persistente  
+🚨 Diarrea intensa  
+🚨 Inflamación marcada de cara o párpados  
+🚨 Convulsiones  
+🚨 Desmayo o debilidad extrema  
 
 ### Cuidados post-vacunación
-- **Reposo:** 24-48 horas sin ejercicio intenso
-- **Observación:** Vigilar comportamiento y síntomas
-- **Hidratación:** Agua fresca siempre disponible
-- **Evitar baños:** 3-5 días después de la vacuna
+- Mantener reposo relativo
+- Observar cambios durante las primeras 24-48 horas
+- Evitar estrés y ejercicio intenso
+- Seguir las indicaciones del veterinario
 
 ## 📍 Dónde vacunar en Colombia
 
 ### 1. Clínicas veterinarias privadas
 **Ventajas:**
+- Esquema completo
 - Atención personalizada
-- Horarios flexibles
-- Servicios adicionales
-- Carné oficial inmediato
-
-**Desventajas:**
-- Costos más elevados
-- Tiempos de espera variables
-
-### 2. Programas gubernamentales
-**Ventajas:**
-- Completamente gratuito
-- Cobertura masiva
-- Vacunas certificadas
-
-**Desventajas:**
-- Solo antirrábica
-- Horarios limitados
-- Disponibilidad variable
-
-### 3. Hospitales veterinarios
-**Ventajas:**
-- Equipamiento completo
-- Especialistas disponibles
-- Atención de emergencias
+- Revisión clínica previa
+- Carné actualizado
 
 **Desventajas:**
 - Mayor costo
-- Requiere cita previa
+- Precios variables por ciudad y servicio
 
-## 📝 Carné de vacunación: Tu documento vital
+### 2. Programas públicos
+**Ventajas:**
+- Gratuitos
+- Útiles para cobertura antirrábica masiva
+- Importantes para salud pública
 
-### Información que debe contener
+**Desventajas:**
+- Normalmente cubren solo rabia
+- Fechas y puntos cambian
+- No reemplazan la consulta veterinaria completa
 
+### 3. Servicios a domicilio
+**Ventajas:**
+- Comodidad
+- Menor estrés para algunos animales
+
+**Desventajas:**
+- Suelen costar más que en punto fijo
+- La disponibilidad depende de la ciudad
+
+## 📝 Carné de vacunación: documento clave
+
+### Lo que debe incluir
 **Datos del animal:**
-- Nombre completo
-- Raza y color
-- Fecha de nacimiento
-- Número de microchip (si aplica)
+- Nombre
+- Especie
+- Raza o tipo
+- Edad o fecha de nacimiento
+- Color
+- Microchip, si aplica
 
-**Registro de cada vacuna:**
-- Fecha exacta de aplicación
-- Tipo de vacuna administrada
-- Número de lote del biológico
-- Laboratorio fabricante
-- Próxima fecha de refuerzo
-- Firma y sello del veterinario
+**Registro vacunal:**
+- Fecha
+- Tipo de vacuna
+- Lote
+- Laboratorio
+- Próximo refuerzo
+- Firma o sello profesional
 
-### Importancia legal del carné
-- **Viajes nacionales:** Requerido en aerolíneas
-- **Viajes internacionales:** Obligatorio con apostilla
-- **Hoteles para mascotas:** Indispensable
-- **Emergencias veterinarias:** Historial médico
+### Por qué importa
+- Sirve como respaldo del plan sanitario
+- Puede ser requerido para viajes, hoteles, guarderías o trámites
+- Ayuda al veterinario a tomar decisiones futuras
 
 ## ❗ Mitos y realidades sobre vacunación
 
 ### Mitos comunes
 
-**"Los perros de interior no necesitan vacunas"**
-- **FALSO:** Virus y bacterias pueden llegar al hogar en ropa y zapatos
+**"Si mi mascota no sale, no necesita vacunas"**  
+Falso. Algunas enfermedades pueden llegar de forma indirecta al hogar y la evaluación del riesgo debe hacerla un veterinario.
 
-**"Una sola vacuna es suficiente para toda la vida"**
-- **FALSO:** La inmunidad disminuye con el tiempo y requiere refuerzos
+**"Una sola vacuna dura para siempre"**  
+Falso. La duración de protección depende del biológico y del tipo de vacuna.
 
-### Realidades científicas
+### Realidades
 
-**Las vacunas salvan vidas:**
-- Reducen mortalidad en 95%
-- Previenen sufrimiento animal
-- Protegen salud pública
-
-**Los efectos secundarios son raros:**
-- Menos del 0.1% presenta reacciones graves
-- Beneficios superan ampliamente los riesgos
+**La vacunación sigue siendo esencial en medicina preventiva veterinaria.**  
+Además, en rabia tiene un impacto claro en salud pública y control epidemiológico.
 
 ## 💡 Consejos prácticos para dueños
 
 ### Antes de la vacunación
-**Preparación del animal:**
-- Observación: Verificar que esté sano
-- Descanso: Noche completa de sueño
-- Transporte: Usar transportador cómodo
-
-**Documentos necesarios:**
-- Carné de vacunación anterior
-- Cédula del propietario
+- Asegúrate de que tu mascota esté clínicamente estable
+- Lleva el carné si ya tiene vacunas previas
+- Evita vacunar animales enfermos sin valoración previa
 
 ### Durante la consulta
-**Preguntas importantes:**
-- ¿Qué vacuna específica está aplicando?
-- ¿Cuándo es el próximo refuerzo?
-- ¿Qué efectos secundarios debo vigilar?
+Pregunta:
+- qué vacuna se aplicó
+- cuál es el próximo refuerzo
+- qué efectos esperados debes vigilar
+- si hay vacunas complementarias recomendadas por riesgo
 
 ### Después de la vacunación
-**Primeras 24 horas:**
-- Observación continua
-- Ambiente tranquilo
-- Evitar estrés
-- Contacto veterinario disponible
+- Mantén observación durante el día
+- Sigue instrucciones del médico veterinario
+- Conserva el carné al día
 
-## ✅ Lista de verificación: ¿Está mi mascota al día?
+## ✅ Lista de verificación
 
-### Cachorros (menores de 6 meses)
-□ Primera pentavalente/trivalente aplicada
-□ Refuerzos según cronograma
-□ Antirrábica a los 3 meses
-□ Próxima cita programada
-□ Carné actualizado
+### Cachorros y gatitos
+□ Primera vacuna aplicada según edad  
+□ Refuerzos programados  
+□ Antirrábica al momento indicado  
+□ Carné actualizado  
+□ Próxima visita agendada  
 
-### Adultos (mayores de 6 meses)
-□ Refuerzo anual pentavalente/trivalente
-□ Refuerzo anual antirrábica
-□ Vacunas opcionales según riesgo
-□ Fecha de próximo refuerzo clara
-□ Documentación completa
+### Adultos
+□ Refuerzos al día  
+□ Evaluación anual con veterinario  
+□ Vacunas complementarias revisadas según riesgo  
+□ Carné disponible y legible  
 
-## 📞 Directorio de emergencias veterinarias
+## 📞 Directorio útil
 
-### Líneas de apoyo 24/7
+### Bogotá
+- **Línea 195**
+- **Correo:** vacunarabiaanimal@saludcapital.gov.co
 
-**Bogotá:**
-- Línea 195: Información general de salud
-- Correo SDS: vacunarabiaanimal@saludcapital.gov.co
-
-**Medellín:**
-- Secretaría de Salud: Información sobre programas
-
-### Qué hacer en emergencia post-vacunal
-1. Mantener la calma
-2. Llamar inmediatamente al veterinario
-3. Transportar con cuidado
-4. Llevar el carné de vacunación
-5. Anotar hora de inicio de síntomas
+### Recomendación general
+Para el resto del país, consulta la Secretaría de Salud o la autoridad sanitaria local de tu municipio.
 
 ## 💭 Reflexión final
 
-La vacunación de mascotas no es solo un acto de responsabilidad individual, sino una contribución a la salud pública y el bienestar animal comunitario. 
+Vacunar a tu mascota no solo protege su salud individual: también ayuda a reducir riesgos sanitarios para otros animales y para las personas. En Colombia, la vacunación antirrábica sigue siendo una pieza central de salud pública, mientras que el resto del esquema debe personalizarse según la edad, el riesgo y la recomendación veterinaria.
 
-**Recuerda que la prevención siempre será más económica, menos traumática y más efectiva que el tratamiento.** Una inversión en vacunación durante la vida de tu mascota puede ahorrarte grandes costos en tratamientos de enfermedades prevenibles.
-
-### Compromiso con tu mascota
-- Cumple religiosamente el esquema de vacunación
-- Mantén el carné siempre actualizado
-- Busca atención veterinaria de calidad
-- Participa en programas comunitarios de salud animal
-
-Tu mascota confía en ti para proteger su salud. La información correcta y actualizada salva vidas.
+**La prevención casi siempre cuesta menos que tratar una enfermedad grave.** Tener el esquema al día, guardar el carné y consultar a tiempo puede hacer una diferencia enorme en la calidad de vida de tu perro o gato.
 
 ---
 
-*¿Tienes dudas sobre el esquema de vacunación de tu mascota? Consulta con tu veterinario de confianza y mantente al día con los programas de salud pública de tu municipio.*
+*¿Tienes dudas sobre el esquema de vacunación de tu mascota? Revisa los puntos oficiales de tu ciudad para la antirrábica y confirma con tu veterinario el calendario más adecuado según la edad, estilo de vida y riesgo de exposición de tu animal.*

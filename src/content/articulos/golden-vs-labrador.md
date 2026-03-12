@@ -1,7 +1,7 @@
 ---
 title: "Golden Retriever vs Labrador: ¿Cuál es la mejor opción para tu familia?"
 description: "Análisis completo de las dos razas más populares para familias. Descubre las diferencias clave en temperamento, cuidados y compatibilidad con niños para elegir tu compañero perfecto."
-date: 2024-01-22T10:00:00.000Z
+date: 2026-02-22T10:00:00.000Z
 author: "Manuel Alejandro Bedoya"
 authorBio: Papá de Río, tío y amigo de muchos peluditos, se esmera en amaestrar a su perro"
 tags: ["ansiedad-separacion", "comportamiento", "perros"]
@@ -11,7 +11,7 @@ image: "/images/articulos/labrador-rosa.webp"
 imageAlt: "Comparación lado a lado de Golden Retriever y Labrador Retriever"
 readingTime: 12
 status: "published"
-seoTitle: "Golden Retriever vs Labrador - Guía completa para elegir 2024"
+seoTitle: "Golden Retriever vs Labrador - Guía completa para elegir 2026"
 seoDescription: "Comparativa detallada entre Golden Retriever y Labrador. Temperamento, cuidados, compatibilidad con niños. Elige la mejor raza para tu familia."
 keywords: ["golden retriever", "labrador retriever", "razas familiares", "perros para niños", "comparativa razas"]
 articleType: "Article"

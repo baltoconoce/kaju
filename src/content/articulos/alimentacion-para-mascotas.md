@@ -1,7 +1,7 @@
 ---
-title: "Alimentación para mascotas en Colombia 2025: Mejores marcas, precios y tendencias nutricionales"
+title: "Alimentación para mascotas en Colombia 2026: Mejores marcas, precios y tendencias nutricionales"
 description: "Guía completa sobre alimentación de perros y gatos en Colombia. Mejores marcas, comparativa de precios, tendencias premium y consejos de veterinarios especializados."
-date: 2025-05-29T20:00:00.000Z
+date: 2026-02-27T20:00:00.000Z
 author: "Equipo Editorial Kajú"
 authorBio: "El equipo de Kajú investiga y verifica información con fuentes confiables para brindarte contenido útil y real sobre el cuidado de mascotas."
 tags: ["alimentacion-mascotas", "nutricion-animal", "colombia", "marcas-premium", "cuidado-mascotas"]
@@ -11,13 +11,13 @@ image: /images/articulos/comida-perros-gatos.jpg
 imageAlt: "Variedad de alimentos premium para mascotas en Colombia"
 readingTime: 16
 status: "published"
-seoTitle: "Alimentación mascotas Colombia 2025 - Mejores marcas y precios"
+seoTitle: "Alimentación mascotas Colombia 2026 - Mejores marcas y precios"
 seoDescription: "Todo sobre alimentación de perros y gatos en Colombia. Marcas recomendadas, precios actuales, tendencias premium y guía nutricional completa por veterinarios."
 keywords: ["alimento para perros colombia", "comida gatos premium", "royal canin precios", "hills science diet", "mejor alimento mascotas"]
 articleType: "Article"
 ---
 
-# Alimentación para mascotas en Colombia 2025: Mejores marcas, precios y tendencias nutricionales
+# Alimentación para mascotas en Colombia 2026: Mejores marcas, precios y tendencias nutricionales
 
 **El mercado de alimentos para mascotas en Colombia experimentó un crecimiento explosivo del 30% en 2024, convirtiéndose en una industria de $1.2 billones de pesos.** Con el 70% de los hogares colombianos teniendo al menos una mascota, la decisión sobre qué alimentar a nuestros compañeros nunca ha sido más importante.
 
@@ -137,7 +137,7 @@ Esta guía completa te ayudará a navegar por el complejo mundo de la alimentaci
 
 *Comparativa de las principales marcas de alimento para mascotas disponibles en Colombia*
 
-## 🥘 Tendencias nutricionales 2025
+## 🥘 Tendencias nutricionales 2026
 
 ### **1. Alimentación personalizada**
 La tendencia hacia alimentos que se adaptan a las necesidades específicas de cada animal está revolucionando el mercado.
@@ -386,7 +386,7 @@ Los treats ya no son solo premios, ahora cumplen funciones nutricionales especí
 - **Agosto:** Día Internacional del Gato
 - **Noviembre:** Black Friday y Cyber Monday
 
-### **Precios promedio por kilogramo (2025):**
+### **Precios promedio por kilogramo (2026):**
 
 #### **Categoría económica:**
 - **Dog Chow:** $8,500 - $11,000/kg
