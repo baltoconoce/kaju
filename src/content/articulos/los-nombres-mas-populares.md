@@ -1,27 +1,27 @@
 ---
-title: "Los nombres más populares para mascotas en Colombia 2025: ¿Cómo elegir el nombre perfecto?"
+title: "Los nombres más populares para mascotas en Colombia 2026: ¿Cómo elegir el nombre perfecto?"
 description: "Descubre los nombres más trending para perros y gatos en Colombia. Guía completa con listas actualizadas, tendencias por región y consejos para elegir el nombre ideal."
-date: 2025-05-29T16:00:00.000Z
+date: 2026-02-29T16:00:00.000Z
 author: "Ana María Prieto"
 authorBio: "Mamá de Río, amante incondicional de los perros y administradora"
-tags: ["nombres-mascotas", "colombia", "tendencias-2025", "perros", "gatos"]
+tags: ["nombres-mascotas", "colombia", "tendencias-2026", "perros", "gatos"]
 category: "tendencias"
 featured: true
 image: /images/articulos/nombres-perros.webp
 imageAlt: "Collage de mascotas colombianas con diferentes nombres populares"
 readingTime: 12
 status: "published"
-seoTitle: "Nombres populares mascotas Colombia 2025 - Lista completa"
-seoDescription: "Los nombres más usados para perros y gatos en Colombia. Tendencias 2025, nombres por ciudades y consejos para elegir el nombre perfecto para tu mascota."
+seoTitle: "Nombres populares mascotas Colombia 2026 - Lista completa"
+seoDescription: "Los nombres más usados para perros y gatos en Colombia. Tendencias 2026, nombres por ciudades y consejos para elegir el nombre perfecto para tu mascota."
 keywords: ["nombres mascotas colombia", "nombres perros populares", "nombres gatos colombia", "como llamar mascota"]
 articleType: "Article"
 ---
 
-# Los nombres más populares para mascotas en Colombia 2025: ¿Cómo elegir el nombre perfecto?
+# Los nombres más populares para mascotas en Colombia 2026: ¿Cómo elegir el nombre perfecto?
 
 **Uno de los momentos más emocionantes después de adoptar una mascota es elegir su nombre.** En Colombia, donde el 70% de los hogares tienen al menos una mascota, la elección del nombre perfecto se ha convertido en una decisión que refleja personalidad, cultura y tendencias sociales.
 
-Con más de 3.5 millones de mascotas en el país y un crecimiento del 4% en adopciones respecto al año anterior, los nombres para perros y gatos han evolucionado significativamente. **Desde nombres tradicionales hasta influencias de redes sociales y cultura pop, descubre las tendencias que están marcando el 2025 en Colombia.**
+Con más de 3.5 millones de mascotas en el país y un crecimiento del 4% en adopciones respecto al año anterior, los nombres para perros y gatos han evolucionado significativamente. **Desde nombres tradicionales hasta influencias de redes sociales y cultura pop, descubre las tendencias que están marcando el 2026 en Colombia.**
 
 ## 🏆 Top 20 nombres más populares para perros en Colombia
 
@@ -81,7 +81,7 @@ Con más de 3.5 millones de mascotas en el país y un crecimiento del 4% en adop
 9. **Canela** - Inspirado en especias
 10. **Dulce** - Personalidad tierna
 
-![Infografía nombres populares mascotas Colombia](/images/articulos/nombres-mascotas-colombia-2025.webp)
+![Infografía nombres populares mascotas Colombia](/images/articulos/nombres-mascotas-colombia-2026.webp)
 
 *Los nombres más populares varían según la región y las tendencias culturales*
 
@@ -117,7 +117,7 @@ Con más de 3.5 millones de mascotas en el país y un crecimiento del 4% en adop
 - Referencias al mar (Coral, Marea, Brisa)
 - Nombres que reflejan el clima tropical
 
-## 🎯 Tendencias emergentes 2025
+## 🎯 Tendencias emergentes 2026
 
 ### **1. Influencia de redes sociales**
 Los nombres de mascotas famosas en Instagram y TikTok están marcando tendencia:
@@ -173,7 +173,7 @@ Reflejando conciencia ambiental:
 ❌ **Comandos de entrenamiento:** "Stay", "Come", "Sit"  
 ❌ **Nombres negativos:** "Problema", "Malo", "Destructor"  
 
-## 🔮 Predicciones para nombres 2026
+## 🔮 Predicciones para nombres 2027
 
 ### **Tendencias que vienen:**
 
