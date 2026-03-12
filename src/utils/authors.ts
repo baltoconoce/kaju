@@ -20,16 +20,16 @@ const AUTHORS_DATABASE: Record<string, AuthorData> = {
   'Ana María Prieto': {
     name: 'Ana María Prieto',
     avatar: '/images/ana-p2.webp',
-    bio: 'Especialista en cuidado y bienestar de mascotas con más de 10 años de experiencia',
-    role: 'Veterinaria especialista',
+    bio: 'Mamá de Río, mi Aussie, y apasionada por el cuidado y bienestar de las mascotas',
+    role: 'Bienestar y cuidado de mascotas ',
     email: 'ana@kajumagazine.com'
   },
   
   'Manuel Alejandro Bedoya': {
     name: 'Manuel Alejandro Bedoya',
     avatar: '/images/manuel-p1.webp',
-    bio: 'Entrenador certificado en comportamiento canino y especialista en modificación de conducta',
-    role: 'Entrenador certificado',
+    bio: 'Papá de Río, creador de Kajú y apasionado por el comportamiento, bienestar y cuidado de los perros.',
+    role: 'Creador de Kajú | Papá de Río',
     email: 'manuel@kajumagazine.com'
   },
   
@@ -37,7 +37,7 @@ const AUTHORS_DATABASE: Record<string, AuthorData> = {
   'Equipo Editorial Kajú': {
     name: 'Equipo Editorial Kajú',
     avatar: '/images/kajulogo.svg',
-    bio: 'Equipo de expertos en mascotas dedicados a crear contenido de calidad',
+    bio: 'Parte de la comunidad de Kajú, compartiendo contenido útil, cercano y relevante sobre mascotas, bienestar y vida pet-friendly.',
     role: 'Equipo editorial',
     email: 'editorial@kajumagazine.com'
   },
@@ -45,7 +45,7 @@ const AUTHORS_DATABASE: Record<string, AuthorData> = {
   'Editor Kajú': {
     name: 'Editor Kajú',
     avatar: '/images/kajulogo.svg',
-    bio: 'Editor principal especializado en contenido sobre mascotas',
+    bio: 'Parte de la comunidad de Kajú, compartiendo contenido útil, cercano y relevante sobre mascotas, bienestar y vida pet-friendly.',
     role: 'Editor principal',
     email: 'editor@kajumagazine.com'
   },
