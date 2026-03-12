@@ -131,7 +131,7 @@ export function getAuthorData(authorName: string | undefined | null): AuthorData
 // 🔧 FUNCIÓN PARA OBTENER BIO DEL AUTOR
 export function getAuthorBio(authorName: string | undefined | null): string {
   const authorData = getAuthorData(authorName);
-  return authorData.bio || 'Especialista en cuidado y bienestar de mascotas';
+  return authorData.bio || 'Mamá de Río, mi Aussie, apasionada por el bienestar, el cuidado y la felicidad de las mascotas';
 }
 
 // 🔧 FUNCIÓN PARA NORMALIZAR NOMBRES DE AUTORES
